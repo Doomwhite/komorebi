@@ -1,7 +1,6 @@
 #SingleInstance Force
-SetTitleMatchMode, 2
-SetKeyDelay, -1
-SetBatchLines, -1
+SetTitleMatchMode(2)
+SetKeyDelay(-1)
 
 ; Some AHK keybindings
 ;#	Win (Windows logo key).
@@ -13,92 +12,125 @@ SetBatchLines, -1
 
 ; Start komorebi
 !^s::
+{ ; V1toV2: Added bracket
 komorebic_start()
 return
 
 ; Exit komorebi
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !^q::
+{ ; V1toV2: Added bracket
 komorebic_stop()
 return
 
 ; Start yasb
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !^y::
+{ ; V1toV2: Added bracket
 yasb_start()
 return
 
 ; Quicksave/load
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !z::
-RunWait, komorebic.exe quick-save, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe quick-save", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !x::
-RunWait, komorebic.exe quick-load, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe quick-load", , "Hide")
 return
 
 ; Change the focused window
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !j::
-RunWait, komorebic.exe cycle-focus next, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe cycle-focus next", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !k::
-RunWait, komorebic.exe cycle-focus previous, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe cycle-focus previous", , "Hide")
 return
 
 ; Move the focused window in a given direction
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !^j::
-RunWait, komorebic.exe cycle-move next, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe cycle-move next", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !^k::
-RunWait, komorebic.exe cycle-move previous, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe cycle-move previous", , "Hide")
 return
 
 ; Resize windows
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !^l::
-RunWait, komorebic.exe resize-axis horizontal increase, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe resize-axis horizontal increase", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !^h::
-RunWait, komorebic.exe resize-axis horizontal decrease, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe resize-axis horizontal decrease", , "Hide")
 return
 
 ; Stack the focused window in a given direction
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !^Left::
-RunWait, komorebic.exe stack left, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe stack left", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !^Down::
-RunWait, komorebic.exe stack down, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe stack down", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !^Up::
-RunWait, komorebic.exe stack up, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe stack up", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !^Right::
-RunWait, komorebic.exe stack right, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe stack right", , "Hide")
 return
 
 !}::
-RunWait, komorebic.exe cycle-stack next, , Hide
+RunWait("komorebic.exe cycle-stack next", , "Hide")
 return
 
 !{::
-RunWait, komorebic.exe cycle-stack previous, , Hide
+RunWait("komorebic.exe cycle-stack previous", , "Hide")
 return
 
 ; Unstack the focused window
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !^d::
-RunWait, komorebic.exe unstack, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe unstack", , "Hide")
 return
 
 ; Promote the focused window to the top of the tree
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !^Enter::
-RunWait, komorebic.exe promote, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe promote", , "Hide")
 return
 
 ; Switch to an equal-width, max-height column layout on the main workspace
@@ -112,28 +144,38 @@ return
 ;return
 
 ; Toggle the Monocle layout for the focused window
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !f::
-RunWait, komorebic.exe toggle-monocle, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe toggle-monocle", , "Hide")
 return
 
 ; Toggle native maximize for the focused window
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !m::
-RunWait, komorebic.exe toggle-maximize, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe toggle-maximize", , "Hide")
 return
 
 ; Toggle native minimize for the focused window
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !^m::
-RunWait, komorebic.exe toggle-minimize, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe toggle-minimize", , "Hide")
 return
 
 ; Flip horizontally
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !n::
-RunWait, komorebic.exe flip-layout horizontal, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe flip-layout horizontal", , "Hide")
 return
 
 ; Flip vertically
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !v::
-RunWait, komorebic.exe flip-layout vertical, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe flip-layout vertical", , "Hide")
 return
 
 ; Force a retile if things get janky
@@ -142,160 +184,229 @@ return
 ; return
 
 ; Float the focused window
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !^f::
-RunWait, komorebic.exe toggle-float, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe toggle-float", , "Hide")
 return
 
 ; Reload ~/komorebi.ahk
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !o::
-RunWait, komorebic.exe reload-configuration, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe reload-configuration", , "Hide")
 return
 
 ; Pause responding to any window events or komorebic commands
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !p::
-RunWait, komorebic.exe toggle-pause, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe toggle-pause", , "Hide")
 return
 
 ; Manages the focused window
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !=::
-RunWait, komorebic.exe manage, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe manage", , "Hide")
 return
 
 ; Unmanages the focused window
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !^=::
-RunWait, komorebic.exe unmanage, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe unmanage", , "Hide")
 return
 
 ; Pause responding to any window events or komorebic commands
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !^p::
-RunWait, komorebic.exe toggle-tiling, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe toggle-tiling", , "Hide")
 return
 
 ; Switch to workspace
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !w::
-Send !
-RunWait, komorebic.exe focus-workspace 0, , Hide
+{ ; V1toV2: Added bracket
+Send("!")
+RunWait("komorebic.exe focus-workspace 0", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !e::
-Send !
-RunWait, komorebic.exe focus-workspace 1, , Hide
+{ ; V1toV2: Added bracket
+Send("!")
+RunWait("komorebic.exe focus-workspace 1", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !r::
-Send !
-RunWait, komorebic.exe focus-workspace 2, , Hide
+{ ; V1toV2: Added bracket
+Send("!")
+RunWait("komorebic.exe focus-workspace 2", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !1::
-Send !
-RunWait, komorebic.exe focus-workspace 3, , Hide
+{ ; V1toV2: Added bracket
+Send("!")
+RunWait("komorebic.exe focus-workspace 3", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !2::
-Send !
-RunWait, komorebic.exe focus-workspace 4, , Hide
+{ ; V1toV2: Added bracket
+Send("!")
+RunWait("komorebic.exe focus-workspace 4", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !u::
-RunWait, komorebic.exe cycle-workspace previous, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe cycle-workspace previous", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !i::
-RunWait, komorebic.exe cycle-workspace next, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe cycle-workspace next", , "Hide")
 
 ; Send window to workspace
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !^w::
-RunWait, komorebic.exe send-to-workspace 0, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe send-to-workspace 0", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !^e::
-RunWait, komorebic.exe send-to-workspace 1, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe send-to-workspace 1", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !^r::
-RunWait, komorebic.exe send-to-workspace 2, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe send-to-workspace 2", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !^1::
-RunWait, komorebic.exe send-to-workspace 3, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe send-to-workspace 3", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !^2::
-RunWait, komorebic.exe send-to-workspace 4, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe send-to-workspace 4", , "Hide")
 return
 
 ; Resize windows
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !Left::
-RunWait, komorebic.exe resize-axis horizontal decrease, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe resize-axis horizontal decrease", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !Right::
-RunWait, komorebic.exe resize-axis horizontal increase, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe resize-axis horizontal increase", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !Down::
-RunWait, komorebic.exe resize-axis vertical decrease, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe resize-axis vertical decrease", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !Up::
-RunWait, komorebic.exe resize-axis vertical increase, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe resize-axis vertical increase", , "Hide")
 return
 
 ; Monitor
 !;::
-RunWait, komorebic.exe cycle-monitor next, , Hide
+RunWait("komorebic.exe cycle-monitor next", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !,::
-RunWait, komorebic.exe cycle-monitor previous, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe cycle-monitor previous", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !7::
-RunWait, komorebic.exe move-to-monitor 0, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe move-to-monitor 0", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !8::
-RunWait, komorebic.exe move-to-monitor 1, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe move-to-monitor 1", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !9::
-RunWait, komorebic.exe move-to-monitor 2, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe move-to-monitor 2", , "Hide")
 return
 
 ; Send window to workspace
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !^7::
-RunWait, komorebic.exe send-to-monitor 0, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe send-to-monitor 0", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !^8::
-RunWait, komorebic.exe send-to-monitor 1, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe send-to-monitor 1", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !^9::
-RunWait, komorebic.exe send-to-monitor 2, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe send-to-monitor 2", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !^+7::
-RunWait, komorebic.exe move-workspace-to-monitor 0, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe move-workspace-to-monitor 0", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !^+8::
-RunWait, komorebic.exe move-workspace-to-monitor 1, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe move-workspace-to-monitor 1", , "Hide")
 return
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 
 !^+9::
-RunWait, komorebic.exe move-workspace-to-monitor 2, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe move-workspace-to-monitor 2", , "Hide")
 return
 
 ; Misc
 
 ; Closes the focused window
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !q::
-RunWait, komorebic.exe close, , Hide
+{ ; V1toV2: Added bracket
+RunWait("komorebic.exe close", , "Hide")
 return
 
 ; Opens wezterm
+} ; V1toV2: Added Bracket before hotkey or Hotstring
 !^t::
-RunWait, wezterm.exe, , Hide
+{ ; V1toV2: Added bracket
+RunWait("wezterm.exe", , "Hide")
 return
+} ; V1toV2: Added bracket in the end
