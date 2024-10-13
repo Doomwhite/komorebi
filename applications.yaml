@@ -1554,8 +1554,31 @@
     kind: Exe
     id: flux.exe
     matching_strategy: Equals
+  options:
+  - tray_and_multi_window
+  float_identifiers:
+  - kind: Exe
+    id: flux.exe
+    matching_strategy: Equals
 - name: Anki
   identifier:
     kind: Exe
     id: anki.exe
+    matching_strategy: Equals
+  options:
+  - tray_and_multi_window
+  float_identifiers:
+  - kind: Exe
+    id: anki.exe
+    matching_strategy: Equals
+- name: Taiga
+  identifier:
+    kind: Exe
+    id: Taiga.exe
+    matching_strategy: Equals
+  options:
+  - tray_and_multi_window
+  float_identifiers:
+  - kind: Exe
+    id: Taiga.exe
     matching_strategy: Equals
