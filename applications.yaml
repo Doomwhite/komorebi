@@ -1554,3 +1554,8 @@
     kind: Exe
     id: flux.exe
     matching_strategy: Equals
+- name: Anki
+  identifier:
+    kind: Exe
+    id: anki.exe
+    matching_strategy: Equals

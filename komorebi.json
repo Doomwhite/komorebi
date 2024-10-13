@@ -25,15 +25,15 @@
     {
       "workspaces": [
         {
-          "name": "I - 1",
+          "name": "I",
           "layout": "BSP"
         },
         {
-          "name": "I - 2",
+          "name": "II",
           "layout": "BSP"
         },
         {
-          "name": "I - 3",
+          "name": "III",
           "layout": "BSP"
         }
       ]
@@ -41,15 +41,15 @@
     {
       "workspaces": [
         {
-          "name": "II - 1",
+          "name": "I",
           "layout": "BSP"
         },
         {
-          "name": "II - 2",
+          "name": "II",
           "layout": "BSP"
         },
         {
-          "name": "II - 3",
+          "name": "III",
           "layout": "BSP"
         }
       ]
