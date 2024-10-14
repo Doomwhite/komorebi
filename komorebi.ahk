@@ -125,7 +125,7 @@ Hotkey(Modifier "-", (_) => Komorebic("resize-axis horizontal decrease"))
 
 ; Example Hotkeys for Window Manipulation:
 Hotkey(Modifier "f", (_) => Komorebic("toggle-float"))
-Hotkey(Modifier "t", (_) => Komorebic("toggle-monocle"))
+Hotkey(Modifier "z", (_) => Komorebic("toggle-monocle"))
 Hotkey(Modifier "b", (_) => Komorebic("toggle-maximize"))
 Hotkey(Modifier "v", (_) => Komorebic("toggle-tiling"))
 
@@ -325,12 +325,14 @@ Hotkey(Modifier "n", (_) => Komorebic("cycle-focus next"))
     Hotkey(Modifier "w", (_) => Komorebic("focus-workspace 0"))
     Hotkey(Modifier "e", (_) => Komorebic("focus-workspace 1"))
     Hotkey(Modifier "r", (_) => Komorebic("focus-workspace 2"))
+    Hotkey(Modifier "t", (_) => Komorebic("focus-workspace 4"))
 
-    Hotkey(Modifier "5", (_) => Komorebic("cycle-move-to-workspace next"))
+    Hotkey(Modifier "6", (_) => Komorebic("cycle-move-to-workspace next"))
 
     Hotkey(Modifier "2", (_) => Komorebic("send-to-workspace 0"))
     Hotkey(Modifier "3", (_) => Komorebic("send-to-workspace 1"))
     Hotkey(Modifier "4", (_) => Komorebic("send-to-workspace 2"))
+    Hotkey(Modifier "5", (_) => Komorebic("send-to-workspace 2"))
 
 
 ; Monitors (Não consigo testar aqui)
