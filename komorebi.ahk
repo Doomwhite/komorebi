@@ -332,7 +332,7 @@ Hotkey(Modifier "n", (_) => Komorebic("cycle-focus next"))
     Hotkey(Modifier "2", (_) => Komorebic("send-to-workspace 0"))
     Hotkey(Modifier "3", (_) => Komorebic("send-to-workspace 1"))
     Hotkey(Modifier "4", (_) => Komorebic("send-to-workspace 2"))
-    Hotkey(Modifier "5", (_) => Komorebic("send-to-workspace 2"))
+    Hotkey(Modifier "5", (_) => Komorebic("send-to-workspace 3"))
 
 
 ; Monitors (Não consigo testar aqui)
