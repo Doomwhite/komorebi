@@ -34,21 +34,59 @@
       "workspaces": [
         {
           "name": "W",
-          "layout": "BSP"
+          "layout": "BSP",
+          "initial_workspace_rules": [
+            {
+              "id": "opera.exe",
+              "kind": "Exe",
+              "matching_strategy": "Equals"
+            }
+          ]
         },
         {
           "name": "E",
-          "layout": "BSP"
+          "layout": "BSP",
+          "initial_workspace_rules": [
+            {
+              "id": "dbeaver.exe",
+              "kind": "Exe",
+              "matching_strategy": "Equals"
+            },
+            {
+              "id": "VsDebugConsole.exe",
+              "kind": "Exe",
+              "matching_strategy": "Equals"
+            }
+          ]
         },
         {
           "name": "R",
-          "layout": "BSP"
+          "layout": "BSP",
+          "initial_workspace_rules": [
+            {
+              "id": "devenv.exe",
+              "kind": "Exe",
+              "matching_strategy": "Equals"
+            }
+          ]
         },
         {
           "name": "T",
-          "layout": "BSP"
-        } 
-      ]
+          "layout": "BSP",
+          "initial_workspace_rules": [
+            {
+              "id": "wezterm-gui.exe",
+              "kind": "Exe",
+              "matching_strategy": "Equals"
+            },
+            {
+              "id": "sublime_text.exe",
+              "kind": "Exe",
+              "matching_strategy": "Equals"
+            }
+          ]
+        }
+      ],
     }
   ]
 }
