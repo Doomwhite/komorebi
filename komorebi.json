@@ -3,8 +3,8 @@
   "app_specific_configuration_path": "$Env:KOMOREBI_CONFIG_HOME/applications.yaml",
   "window_hiding_behaviour": "Cloak",
   "cross_monitor_move_behaviour": "Insert",
-  "default_workspace_padding": 3,
-  "default_container_padding": 4,
+  "default_workspace_padding": 2,
+  "default_container_padding": 2,
   "border": true,
   "border_width": 5,
   "border_offset": -1,
@@ -27,37 +27,25 @@
         {
           "name": "I",
           "layout": "BSP"
-        },
-        {
-          "name": "II",
-          "layout": "BSP"
-        },
-        {
-          "name": "III",
-          "layout": "BSP"
-        },
-        {
-          "name": "IV",
-          "layout": "BSP"
-        }        
+        }
       ]
     },
     {
       "workspaces": [
         {
-          "name": "I",
+          "name": "W",
           "layout": "BSP"
         },
         {
-          "name": "II",
+          "name": "E",
           "layout": "BSP"
         },
         {
-          "name": "III",
+          "name": "R",
           "layout": "BSP"
         },
         {
-          "name": "IV",
+          "name": "T",
           "layout": "BSP"
         } 
       ]
