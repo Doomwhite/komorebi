@@ -325,7 +325,7 @@ Hotkey(Modifier "n", (_) => Komorebic("cycle-focus next"))
     Hotkey(Modifier "w", (_) => Komorebic("focus-workspace 0"))
     Hotkey(Modifier "e", (_) => Komorebic("focus-workspace 1"))
     Hotkey(Modifier "r", (_) => Komorebic("focus-workspace 2"))
-    Hotkey(Modifier "t", (_) => Komorebic("focus-workspace 4"))
+    Hotkey(Modifier "t", (_) => Komorebic("focus-workspace 3"))
 
     Hotkey(Modifier "6", (_) => Komorebic("cycle-move-to-workspace next"))
 
